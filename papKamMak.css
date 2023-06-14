@@ -134,17 +134,17 @@ td {
 
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 580px) {
  
 
     .tabla {
         padding-top: 80px;
         margin: auto;
-        width:980px;
-        height: 700px;
+        width:950px;
+        height: 600px;
     }
     .tablaGore {
-        width: 900px;
+        width: 950px;
         font-size: 44px;
     }
    .tablaGore td {
@@ -154,9 +154,13 @@ td {
         width: 200px;
     }
 
-    #prviRed .protiv {
-        font-size: 44px;
+   .tabla #prviRed .protiv {
+        font-size: 60px;
+        padding-top: 100px;
+    
+    
     }
+
     #rezultat {
         font-size: 50px;
     }
