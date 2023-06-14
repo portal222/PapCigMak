@@ -1,0 +1,185 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+.tabla {
+    margin: auto;
+    width: 650px;
+    height: 400px;
+}
+
+.tabla #prviRed {
+    height: 100px;
+    padding-bottom: 50px;
+}
+
+.tabla #prviRed td {
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    padding-bottom: 40px;
+    color: rgb(71, 71, 71);
+}
+
+.tabla #prviRed .protiv {
+    padding-bottom: 110px;
+
+}
+
+
+
+h2 {
+    text-align: center;
+    color: rgb(112, 112, 161);
+    font-size: 28px;
+}
+
+#slika1,
+#slika2 {
+    font-size: 120px;
+    color: rgb(66, 94, 102);
+
+}
+
+#papir,
+#kamen,
+#makaze {
+    color: darkslategray;
+    background-color: aquamarine;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#papir:hover,
+#kamen:hover,
+#makaze:hover {
+    background-color: rgb(200, 255, 237);
+
+    color: rgb(109, 184, 184);
+}
+
+span {
+    color: cadetblue;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    background-color: rgb(195, 195, 212);
+}
+
+
+
+
+
+.navig a:hover {
+    background-color: darkslategrey;
+    color: aliceblue;
+}
+
+a.active {
+    background-color: rgb(124, 201, 201);
+    color: aliceblue;
+}
+
+
+
+
+.tabla td {
+    padding: 10px;
+    height: 40px;
+    text-align: center;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    color: rgb(71, 71, 71);
+    font-size: 24px;
+
+
+}
+
+
+#rezultat {
+    font-size: 24px;
+    color: rgb(71, 71, 71);
+}
+
+
+
+
+
+
+
+
+
+h2 {
+    background-color: rgb(199, 201, 170);
+    color: rgb(48, 49, 39);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+td {
+    height: 20px;
+    width: 130px;
+    vertical-align: bottom;
+    text-align: right;
+    background-color: darkseagreen;
+    color: white;
+    font-family: 'PT Sans Caption', sans-serif;
+    padding: 20px;
+}
+
+
+
+
+@media screen and (max-width: 450px) {
+ 
+
+    .tabla {
+        padding-top: 80px;
+        margin: auto;
+        width:900px;
+        height: 700px;
+    }
+    .tablaGore {
+        width: 900px;
+        font-size: 40px;
+    }
+   .tablaGore td {
+        font-size: 40px;
+    }
+    .tablaGore .naziv {
+        width: 200px;
+    }
+
+    #prviRed .protiv {
+        font-size: 40px;
+    }
+    #rezultat {
+        font-size: 50px;
+    }
+
+    body {
+        background-color: rgb(62, 61, 61);
+    }
+
+    #papir,
+    #kamen,
+    #makaze {
+
+
+        font-size: 45px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        text-align: center;
+        color: rgb(87, 243, 251);
+        font-size: 55px;
+        background-color:  rgb(71, 71, 71);
+    }
+
+
+}
