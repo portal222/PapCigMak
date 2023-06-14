@@ -1,6 +1,5 @@
-/* * {
-    box-sizing: border-box;
-} */
+
+
 
 .tabla {
     margin: auto;
@@ -134,17 +133,17 @@ td {
 
 
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 600px) {
  
 
     .tabla {
         padding-top: 80px;
         margin: auto;
-        width:950px;
+min-width:880px;
         height: 600px;
     }
     .tablaGore {
-        width: 950px;
+        /* width: 950px; */
         font-size: 44px;
     }
    .tablaGore td {
