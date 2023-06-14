@@ -1,6 +1,6 @@
-// var igrac = prompt("Upisite izbor: kamen, makaze ili papir");
 
-console.log("Igrac: ");
+
+
 
 var on = 0;
 var mi = 0;
@@ -59,8 +59,6 @@ function dajPapir() {
 };
 function dajKamen() {
     var igrac = "🧱";
-    //ubacivanje slika i podesavanje visine
-    // document.getElementById("slika1").innerHTML = ("<img src=slike/pesnica.jpg style='height: 50px;'>");
     var racunar = Math.random();
     document.getElementById("slika1").innerHTML = ("🧱");
 
