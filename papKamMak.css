@@ -134,28 +134,28 @@ td {
 
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
  
 
     .tabla {
         padding-top: 80px;
         margin: auto;
-        width:900px;
+        width:980px;
         height: 700px;
     }
     .tablaGore {
         width: 900px;
-        font-size: 40px;
+        font-size: 44px;
     }
    .tablaGore td {
-        font-size: 40px;
+        font-size: 44px;
     }
     .tablaGore .naziv {
         width: 200px;
     }
 
     #prviRed .protiv {
-        font-size: 40px;
+        font-size: 44px;
     }
     #rezultat {
         font-size: 50px;
@@ -169,9 +169,9 @@ td {
     #kamen,
     #makaze {
 
-
-        font-size: 45px;
-        border-radius: 4px;
+padding: 0 20px;
+        font-size: 48px;
+        border-radius: 8px;
         margin-bottom: 20px;
     }
     h2 {
