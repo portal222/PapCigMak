@@ -35,9 +35,14 @@ h2 {
 
 #slika1,
 #slika2 {
+    width: 150px;
     font-size: 120px;
     color: rgb(66, 94, 102);
 
+}
+#slika1 #covek,
+#slika2 #masina {
+    width: 120px;
 }
 
 #papir,
