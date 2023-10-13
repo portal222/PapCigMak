@@ -3,10 +3,15 @@
 
 .tabla {
     margin: auto;
-    width: 650px;
+    width: 600px;
     height: 400px;
+    border-collapse: collapse;
 }
-
+#rezMi,
+#rezIsto,
+#rezOn {
+    font-size: 32px;
+}
 .tabla #prviRed {
     height: 100px;
     padding-bottom: 50px;
@@ -15,13 +20,14 @@
 .tabla #prviRed td {
     justify-content: center;
     align-items: center;
-    width: 33%;
+    width: 290px;
     padding-bottom: 40px;
     color: rgb(71, 71, 71);
 }
 
 .tabla #prviRed .protiv {
     padding-bottom: 110px;
+    width: 20px;
 
 }
 
@@ -36,6 +42,7 @@ h2 {
 #slika1,
 #slika2 {
     width: 150px;
+    height: 230px;
     font-size: 120px;
     color: rgb(66, 94, 102);
 
@@ -43,11 +50,13 @@ h2 {
 #slika1 #covek,
 #slika2 #masina {
     width: 120px;
+   
 }
 
 #papir,
 #kamen,
-#makaze {
+#makaze,
+#nova {
     color: darkslategray;
     background-color: aquamarine;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -58,7 +67,8 @@ h2 {
 
 #papir:hover,
 #kamen:hover,
-#makaze:hover {
+#makaze:hover,
+#nova:hover {
     background-color: rgb(200, 255, 237);
 
     color: rgb(109, 184, 184);
@@ -72,6 +82,7 @@ span {
 body {
     background-color: rgb(195, 195, 212);
 }
+
 
 
 
@@ -108,7 +119,12 @@ a.active {
     font-size: 24px;
     color: rgb(71, 71, 71);
 }
+.saka {
+  display: inline-block;
 
+    transform: rotate(90deg);
+    background-color: blue;
+}
 
 
 
@@ -138,56 +154,3 @@ td {
 
 
 
-@media screen and (max-width: 600px) {
- 
-
-    .tabla {
-        padding-top: 80px;
-        margin: auto;
-min-width:880px;
-        height: 600px;
-    }
-    .tablaGore {
-        /* width: 950px; */
-        font-size: 44px;
-    }
-   .tablaGore td {
-        font-size: 44px;
-    }
-    .tablaGore .naziv {
-        width: 200px;
-    }
-
-   .tabla #prviRed .protiv {
-        font-size: 60px;
-        padding-top: 100px;
-    
-    
-    }
-
-    #rezultat {
-        font-size: 50px;
-    }
-
-    body {
-        background-color: rgb(62, 61, 61);
-    }
-
-    #papir,
-    #kamen,
-    #makaze {
-
-padding: 0 20px;
-        font-size: 48px;
-        border-radius: 8px;
-        margin: 50px 0;
-    }
-    h2 {
-        text-align: center;
-        color: rgb(87, 243, 251);
-        font-size: 55px;
-        background-color:  rgb(71, 71, 71);
-    }
-
-
-}

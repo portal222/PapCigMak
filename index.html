@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./papKamMak.css">
     <script src="jquery-3.6.3.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="./papirKamenMakaze.js"></script>
     <title>Papir Kamen Makaze</title>
 </head>
 
@@ -22,35 +22,53 @@
             </tr>
             <tr>
                 <td colspan="3">
-                    <table class="tablaGore">
-                        <tr >
-                            <td class="naziv">ČOVEK</td>
-                            <td id="rezMi">0</td>
-                            <td id="rezIsto">0</td>
-                            <td id="rezOn">0</td>
-                            <td class="naziv">MAŠINA</td>
-                        </tr>
-                    </table>
-                </td>
+
+            <tr>
+                <td id="rezMi">0</td>
+                <td id="rezIsto">0</td>
+                <td id="rezOn">0</td>
+            </tr>
+
+            </td>
 
             </tr>
             <tr id="prviRed">
                 <td id="slika1">
-                    <img src="public/img/detelina_beli_rub.png" alt="slika-coveka" id="covek"/>
+                 🙎‍♂️
                 </td>
-                <td class="protiv">protiv</td>
+                <td class="protiv">vs</td>
                 <td id="slika2">
-                    <img src="public/img/dijamant_beli_rub.png" alt="slika-kompjuter" id="masina"/>
+                   📱
                 </td>
             </tr>
+            <tr>
+                <td class="naziv">ČOVEK</td>
+                <td></td>
+                <td class="naziv">MAŠINA</td>
+            </tr>
+
             <tr>
                 <td id="rezultat" colspan="3">Borba može da počne</td>
             </tr>
             <tr>
-                <td><input type="button" id="papir" value="PAPIR"> </td>
-                <td><input type="button" id="kamen" value="CIGLA" > </td>
-                <td style="height: 50px;">
-                    <input type="button" id="makaze" value="MAKAZE"> </td>
+                <td colspan="3"><input type="button" id="papir" value="PAPIR 🤚" onclick="dajPapir()">
+            </tr>
+            </tr>
+            <tr>
+
+                <td colspan="3"><input type="button" id="kamen" value="CIGLA 🤜" onclick="dajKamen()"> </td>
+            </tr>
+            <tr>
+                <td style="height: 50px;" colspan="3">
+                    <input type="button" id="makaze" value="MAKAZE ✌" onclick="dajMakaze()">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    <input type="button" id="nova" value="Nova igra">
+                </td>
             </tr>
         </table>
     </div>

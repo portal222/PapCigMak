@@ -12,7 +12,8 @@ $(document).ready(function () {
     console.log("nas rezultat", mi);
 
     var slike = ["public/img/detelina_beli_rub.png",
-        "public/img/dijamant_beli_rub.png", "public/img/tresnja_beli_rub.png"]
+        "public/img/dijamant_beli_rub.png", "public/img/tresnja_beli_rub.png",
+    "public/img/drvo-raste-4.gif", "public/img/cuvar-aum.gif"]
 
 
 
@@ -67,7 +68,9 @@ $(document).ready(function () {
                 document.getElementById("rezIsto").style.color = "black";
                 document.getElementById("rezOn").style.color = "black";
                 if (mi > 9) {
-                    $("#rezultat").html("Bravo pobedili ste masinu")
+                    $("#rezultat").html("Čestitamo na uspehu pobede nad mašinom")
+                    document.getElementById("rezultat").style.color = "orange";
+
                 }
 
             } else {
@@ -80,7 +83,9 @@ $(document).ready(function () {
                     document.getElementById("rezIsto").style.color = "black";
                     document.getElementById("rezMi").style.color = "black";
                     if (on > 9) {
-                        $("#rezultat").html("Zao mi je izgubili ste partiju")
+                        $("#rezultat").html("Žao mi je izgubili ste partiju")
+                    document.getElementById("rezultat").style.color = "orange";
+
                     }
                 }
             }
@@ -141,7 +146,10 @@ $(document).ready(function () {
                 document.getElementById("rezOn").style.color = "black";
 
                 if (mi > 9) {
-                    $("#rezultat").html("Bravo pobedili ste masinu")
+                    $("#rezultat").html("Čestitamo na uspehu pobede nad mašinom")
+                    document.getElementById("rezultat").style.color = "orange";
+                    
+
                     console.log("presao je deset pogodaka")
                 }
             } else {
@@ -154,7 +162,9 @@ $(document).ready(function () {
                     document.getElementById("rezIsto").style.color = "black";
                     document.getElementById("rezMi").style.color = "black";
                     if (on > 9) {
-                        $("#rezultat").html("Zao mi je izgubili ste partiju")
+                        $("#rezultat").html("Žao mi je izgubili ste partiju")
+                    document.getElementById("rezultat").style.color = "orange";
+
                     }
                 }
             }
@@ -212,8 +222,10 @@ $(document).ready(function () {
                 document.getElementById("rezIsto").style.color = "black";
                 document.getElementById("rezOn").style.color = "black";
                 if (mi > 9) {
-                    $("#rezultat").html("Bravo pobedili ste masinu")
+                    $("#rezultat").html("Čestitamo na uspehu pobede nad mašinom")
                     console.log("presao je deset pogodaka")
+                    document.getElementById("rezultat").style.color = "orange";
+
                 }
 
             } else {
@@ -226,11 +238,36 @@ $(document).ready(function () {
                     document.getElementById("rezIsto").style.color = "black";
                     document.getElementById("rezMi").style.color = "black";
                     if (on > 9) {
-                        $("#rezultat").html("Zao mi je izgubili ste partiju")
+                        $("#rezultat").html("Žao mi je izgubili ste partiju")
+                    document.getElementById("rezultat").style.color = "orange";
+
                     }
                 }
             }
         }
+
+    });
+
+    $("#nova").click(function () {
+        on = 0;
+        $("#rezOn").html(on);
+
+        mi = 0;
+        $("#rezMi").html(mi);
+
+        jed = 0;
+        $("#rezIsto").html(jed);
+
+        document.getElementById("rezOn").style.color = "black";
+        document.getElementById("rezIsto").style.color = "black";
+        document.getElementById("rezMi").style.color = "black";
+
+        slikaCovek.attr("src", slike[3]);
+        slikaKomp.attr("src", slike[4]);
+        document.getElementById("rezultat").style.color = "black";
+        $("#rezultat").html("Borba može da počne");
+
+
 
     })
 
