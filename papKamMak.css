@@ -1,17 +1,27 @@
 
 
-
+body {
+    background-color: blueviolet;
+    margin: 0;
+    padding: 0;
+}
 .tabla {
     margin: auto;
-    width: 600px;
-    height: 400px;
+    width: 900px;
+    height: 600px;
     border-collapse: collapse;
+    background-color: darkseagreen;
+    font-family: 'PT Sans Caption', sans-serif;
 }
 #rezMi,
-#rezIsto,
+
 #rezOn {
+    font-size: 40px;
+}
+#rezIsto {
     font-size: 32px;
 }
+
 .tabla #prviRed {
     height: 100px;
     padding-bottom: 50px;
@@ -20,36 +30,36 @@
 .tabla #prviRed td {
     justify-content: center;
     align-items: center;
-    width: 290px;
-    padding-bottom: 40px;
+ 
+    padding-bottom: 30px;
     color: rgb(71, 71, 71);
 }
 
 .tabla #prviRed .protiv {
     padding-bottom: 110px;
-    width: 20px;
+    width: 10px;
 
 }
 
 
-
+.tabla
 h2 {
     text-align: center;
-    color: rgb(112, 112, 161);
-    font-size: 28px;
+    color:rgb(71, 71, 71) ;
+    font-size: 34px;
+    background-color:rgb(204, 129, 122) ;
 }
 
 #slika1,
 #slika2 {
-    width: 150px;
+    width: 250px;
     height: 230px;
     font-size: 120px;
     color: rgb(66, 94, 102);
 
 }
-#slika1 #covek,
-#slika2 #masina {
-    width: 120px;
+#razmak {
+    width: 12px;
    
 }
 
@@ -57,6 +67,7 @@ h2 {
 #kamen,
 #makaze,
 #nova {
+    width: 320px;
     color: darkslategray;
     background-color: aquamarine;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -64,6 +75,7 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
 }
+
 
 #papir:hover,
 #kamen:hover,
@@ -116,14 +128,8 @@ a.active {
 
 
 #rezultat {
-    font-size: 24px;
+    font-size: 34px;
     color: rgb(71, 71, 71);
-}
-.saka {
-  display: inline-block;
-
-    transform: rotate(90deg);
-    background-color: blue;
 }
 
 
@@ -140,7 +146,7 @@ h2 {
 }
 
 
-td {
+/* td {
     height: 20px;
     width: 130px;
     vertical-align: bottom;
@@ -149,8 +155,32 @@ td {
     color: white;
     font-family: 'PT Sans Caption', sans-serif;
     padding: 20px;
-}
+} */
+@media screen and (max-width: 500px) {
+    .tabla {
+        margin: auto;
+        max-width: 950px;
+        min-width: 950px;
+        height: 800px;
+        border-collapse: collapse;
+    };
+    .tabla #prviRed {
+     
+  
+        padding-bottom: 40px;
+        color: rgb(71, 71, 71);
+    };
+    #slika1,
+#slika2 {
+    width: 450px;
+    height: 230px;
+    font-size: 120px;
+    color: rgb(66, 94, 102);
 
+};
+
+
+};
 
 
 

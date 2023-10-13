@@ -32,12 +32,12 @@ function dajPapir() {
 
 
     console.log(racunar);
-    document.getElementById("slika2").innerHTML= (racun);
+    document.getElementById("slika2").innerHTML = (racun);
 
     if (brCovek === brKomp) {
-        console.log("Rezultat je izjednačen ");
+        console.log("Nerešeno");
         jed++
-        document.getElementById("rezultat").innerHTML = "Rezultat je izjednačen";
+        document.getElementById("rezultat").innerHTML = "Nerešeno";
         document.getElementById("rezIsto").innerHTML = jed;
         document.getElementById("rezOn").style.color = "rgb(71, 71, 71)";
         document.getElementById("rezMi").style.color = "rgb(71, 71, 71)";
@@ -46,23 +46,31 @@ function dajPapir() {
     if (brCovek === 2) {
         if (brKomp === 3) {
             on++
-            document.getElementById("rezultat").innerHTML = "PC pobeđuje";
+            document.getElementById("rezultat").innerHTML = "Bod za mašinu";
             document.getElementById("rezOn").innerHTML = on;
             document.getElementById("rezMi").style.color = "rgb(71, 71, 71)";
             document.getElementById("rezIsto").style.color = "rgb(71, 71, 71)";
             document.getElementById("rezOn").style.color = "orange";
-            console.log("PC pobeđuje");
+            console.log("Bod za mašinu");
+            if (on > 9) {
+                document.getElementById("rezultat").innerHTML = "Žao mi je mašina je pobedila!";
+                document.getElementById("rezultat").style.color = "orange";
+            }
         } else {
             if (brKomp === 1) {
                 mi++
-                console.log("Igrač pobeđuje")
-                document.getElementById("rezultat").innerHTML = "Igrač pobeđuje";
+                console.log("Bod za čoveka")
+                document.getElementById("rezultat").innerHTML = "Bod za čoveka";
                 document.getElementById("rezMi").innerHTML = mi;
                 document.getElementById("rezOn").style.color = "rgb(71, 71, 71)";
                 document.getElementById("rezIsto").style.color = "rgb(71, 71, 71)";
 
                 document.getElementById("rezMi").style.color = "orange";
+                if (mi > 9) {
+                    document.getElementById("rezultat").innerHTML = "Bravo pobedili ste mašinu!";
 
+                    document.getElementById("rezultat").style.color = "orange";
+                }
             }
         }
     };
@@ -92,8 +100,8 @@ function dajKamen() {
 
     if (brCovek === brKomp) {
         jed++
-        console.log("Rezultat je izjednačen ");
-        document.getElementById("rezultat").innerHTML = "Rezultat je izjednačen";
+        console.log("Nerešeno");
+        document.getElementById("rezultat").innerHTML = "Nerešeno";
         document.getElementById("rezIsto").innerHTML = jed;
         document.getElementById("rezOn").style.color = "rgb(71, 71, 71)";
         document.getElementById("rezMi").style.color = "rgb(71, 71, 71)";
@@ -103,8 +111,8 @@ function dajKamen() {
     if (brCovek === 1) {
         if (brKomp === 3) {
             mi++;
-            document.getElementById("rezultat").innerHTML = "Igrač pobeđuje";
-            console.log("Igrač pobeđuje");
+            document.getElementById("rezultat").innerHTML = "Bod za čoveka";
+            console.log("Bod za čoveka");
             document.getElementById("rezMi").innerHTML = mi;
             document.getElementById("rezOn").style.color = "rgb(71, 71, 71)";
             document.getElementById("rezIsto").style.color = "rgb(71, 71, 71)";
@@ -112,16 +120,25 @@ function dajKamen() {
             document.getElementById("rezMi").style.color = "orange";
 
             console.log(mi);
+            if (mi > 9) {
+                document.getElementById("rezultat").innerHTML = "Bravo pobedili ste mašinu!";
+
+                document.getElementById("rezultat").style.color = "orange";
+            }
         } else {
             if (brKomp === 2) {
                 on++
-                console.log("PC pobeđuje")
-                document.getElementById("rezultat").innerHTML = "PC pobeđuje";
+                console.log("Bod za mašinu")
+                document.getElementById("rezultat").innerHTML = "Bod za mašinu";
                 document.getElementById("rezOn").innerHTML = on;
                 document.getElementById("rezMi").style.color = "rgb(71, 71, 71)";
                 document.getElementById("rezIsto").style.color = "rgb(71, 71, 71)";
 
                 document.getElementById("rezOn").style.color = "orange";
+                if (on > 9) {
+                    document.getElementById("rezultat").innerHTML = "Žao mi je mašina je pobedila!";
+                    document.getElementById("rezultat").style.color = "orange";
+                }
             }
         }
     };
@@ -130,7 +147,7 @@ function dajKamen() {
 function dajMakaze() {
     var brCovek = 3;
     document.getElementById("slika1").innerHTML = "✌";
- 
+
     var racunar = Math.random();
     if (racunar < 0.34) {
         var racun = "🤛";
@@ -150,8 +167,8 @@ function dajMakaze() {
 
     if (brCovek === brKomp) {
         jed++
-        console.log("Rezultat je izjednačen ");
-        document.getElementById("rezultat").innerHTML = "Rezultat je izjednačen";
+        console.log("Nerešeno");
+        document.getElementById("rezultat").innerHTML = "Nerešeno";
         document.getElementById("rezIsto").innerHTML = jed;
         document.getElementById("rezOn").style.color = "rgb(71, 71, 71)";
         document.getElementById("rezMi").style.color = "rgb(71, 71, 71)";
@@ -162,26 +179,58 @@ function dajMakaze() {
     if (brCovek === 3) {
         if (brKomp === 1) {
             on++
-            document.getElementById("rezultat").innerHTML = "PC pobeđuje";
+            document.getElementById("rezultat").innerHTML = "Bod za mašinu";
             document.getElementById("rezOn").innerHTML = on;
             document.getElementById("rezMi").style.color = "rgb(71, 71, 71)";
             document.getElementById("rezIsto").style.color = "rgb(71, 71, 71)";
 
             document.getElementById("rezOn").style.color = "orange";
+            if (on > 9) {
+                document.getElementById("rezultat").innerHTML = "Žao mi je mašina je pobedila!";
+                document.getElementById("rezultat").style.color = "orange";
+            }
         } else {
             if (brKomp === 2) {
                 console.log("Igrac pobeđuje " + mi + " put");
 
                 mi++;
-                document.getElementById("rezultat").innerHTML = "Igrač pobeđuje";
+                document.getElementById("rezultat").innerHTML = "Bod za čoveka";
                 document.getElementById("rezMi").innerHTML = mi;
                 document.getElementById("rezOn").style.color = "rgb(71, 71, 71)";
                 document.getElementById("rezIsto").style.color = "rgb(71, 71, 71)";
 
                 document.getElementById("rezMi").style.color = "orange";
+                if (mi > 9) {
+                    document.getElementById("rezultat").innerHTML = "Bravo pobedili ste mašinu!";
+
+                    document.getElementById("rezultat").style.color = "orange";
+                }
             }
         }
     };
 
 
 };
+
+
+
+
+function novaIgra() {
+    on = 0
+    document.getElementById("rezOn").innerHTML = on;
+    document.getElementById("rezOn").style.color = "rgb(71, 71, 71)";
+    mi = 0
+    document.getElementById("rezMi").innerHTML = mi;
+    document.getElementById("rezMi").style.color = "rgb(71, 71, 71)";
+    jed = 0
+    document.getElementById("rezIsto").innerHTML = jed;
+    document.getElementById("rezIsto").style.color = "rgb(71, 71, 71)";
+
+    document.getElementById("rezultat").innerHTML = "Borba može da počne";
+    document.getElementById("rezultat").style.color = "rgb(71, 71, 71)";
+    
+    document.getElementById("slika1").innerHTML = "👨🏻‍💼";
+    document.getElementById("slika2").innerHTML = "📱";
+
+}
+
