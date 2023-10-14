@@ -45,6 +45,7 @@ background-color: rgb(0, 0, 0);
 
 #slika1,
 #slika2 {
+    padding-top: 10px;
     background-color: beige;
     border-radius: 20px;
     border: 1px solid gray;
