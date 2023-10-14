@@ -1,0 +1,157 @@
+
+body {
+    display: flex;
+    align-items: center;
+padding: 0;
+margin: 0;
+background-color: brown;
+}
+.tabla {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    background-color: lightgray;
+    margin: auto;
+    width: 920px;
+    height: 1000px;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#brojevi {
+    padding: 40px;
+    display: flex;
+    font-size: 72px;
+    width: 820px;
+    font-weight: bold;
+    text-shadow: 1px 1px 7px black;
+    align-content: space-around;
+    border-top: 1px solid gray;
+}
+#rezMi,
+#rezIsto,
+#rezOn {
+    width: 300px;
+}
+#prviRed {
+    display: flex;
+    
+
+}
+.naziv {
+    padding: 10px 100px;
+}
+
+#slika1,
+#slika2 {
+    background-color: beige;
+    border-radius: 20px;
+    border: 1px solid gray;
+    width: 300px;
+    height: 220px;
+    font-size: 150px;
+}
+#prviRed #razmak {
+    width: 100px;
+    /* align-items: center; */
+    text-align: center;
+  
+    padding-top: 80px;
+    font-size: 48px;
+}
+#rezultat {
+    font-weight: bold;
+    padding-bottom: 50px;
+    text-shadow: 2px 2px 4px black;
+}
+#dugmad {
+    display: flex;
+    /* flex-direction: column; */
+
+}
+#papir,
+#kamen,
+#makaze {
+    width: 250px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+#papir:hover,
+#kamen:hover,
+#makaze:hover {
+    background-color: rgb(254, 206, 148);
+}
+#wraper {
+    display: flex;
+    width: 800px;
+    height: 120px;
+
+    padding-top: 50px;
+    justify-items: flex-start;
+}
+#nova {
+    width: 180px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 22px;
+
+    background-color: rgb(134, 248, 186);
+    cursor: pointer;
+}
+#nova:hover {
+    background-color: rgb(62, 232, 175);
+}
+
+@media screen and (max-width: 550px) {
+    .tabla {
+
+        /* border: 30px solid black; */
+        background-color: rgb(178, 223, 190);
+        height: 2200px;
+    }
+
+    .tabla h2 {
+        font-size: 64px;
+    }
+    .naziv {
+        padding: 15px 150px;
+    }
+
+    #slika1,
+    #slika2 {
+        width: 390px;
+        height: 420px;
+        font-size: 290px;
+    }
+    #prviRed #razmak {
+        padding-top: 200px;
+    }
+
+    #dugmad {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    #papir,
+    #kamen,
+    #makaze {
+        width: 470px;
+        height: 110px;
+        border-radius: 25px;
+        font-size: 60px;
+        margin: 20px;
+    }
+    #nova {
+        width: 320px;
+        height: 110px;
+        border-radius: 25px;
+        font-size: 50px;
+    
+        background-color: rgb(134, 248, 186);
+        cursor: pointer;
+    }
+}
