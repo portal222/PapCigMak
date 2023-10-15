@@ -188,6 +188,11 @@ function dajMakaze() {
             if (on > 9) {
                 document.getElementById("rezultat").innerHTML = "Žao mi je mašina je pobedila!";
                 document.getElementById("rezultat").style.color = "orange";
+                document.getElementById("kamen").disabled = "true"
+                document.getElementById("papir").disabled = "true"
+                document.getElementById("makaze").disabled = "true"
+
+
             }
         } else {
             if (brKomp === 2) {
@@ -204,6 +209,11 @@ function dajMakaze() {
                     document.getElementById("rezultat").innerHTML = "Bravo pobedili ste mašinu!";
 
                     document.getElementById("rezultat").style.color = "orange";
+                    document.getElementById("papir").disabled = "true"
+                    document.getElementById("kamen").disabled = "true"
+                    document.getElementById("makaze").disabled = "true"
+
+
                 }
             }
         }
@@ -212,25 +222,30 @@ function dajMakaze() {
 
 };
 
-
-
-
 function novaIgra() {
-    on = 0
-    document.getElementById("rezOn").innerHTML = on;
-    document.getElementById("rezOn").style.color = "rgb(71, 71, 71)";
-    mi = 0
-    document.getElementById("rezMi").innerHTML = mi;
-    document.getElementById("rezMi").style.color = "rgb(71, 71, 71)";
-    jed = 0
-    document.getElementById("rezIsto").innerHTML = jed;
-    document.getElementById("rezIsto").style.color = "rgb(71, 71, 71)";
-
-    document.getElementById("rezultat").innerHTML = "Borba može da počne";
-    document.getElementById("rezultat").style.color = "rgb(71, 71, 71)";
-    
-    document.getElementById("slika1").innerHTML = "👨🏻‍💼";
-    document.getElementById("slika2").innerHTML = "📱";
-
+    location.reload();
 }
+
+
+// function novaIgra() {
+//     on = 0
+//     document.getElementById("rezOn").innerHTML = on;
+//     document.getElementById("rezOn").style.color = "rgb(71, 71, 71)";
+//     mi = 0
+//     document.getElementById("rezMi").innerHTML = mi;
+//     document.getElementById("rezMi").style.color = "rgb(71, 71, 71)";
+//     jed = 0
+//     document.getElementById("rezIsto").innerHTML = jed;
+//     document.getElementById("rezIsto").style.color = "rgb(71, 71, 71)";
+
+//     document.getElementById("rezultat").innerHTML = "Borba može da počne";
+//     document.getElementById("rezultat").style.color = "rgb(71, 71, 71)";
+
+//     document.getElementById("slika1").innerHTML = "👨🏻‍💼";
+//     document.getElementById("slika2").innerHTML = "📱";
+//     document.getElementById("kamen").disabled = "false"
+//     document.getElementById("papir").disabled = "false"
+//     document.getElementById("makaze").disabled = "false"
+
+// }
 
