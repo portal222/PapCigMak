@@ -5,7 +5,7 @@
     <!-- <link rel="stylesheet" href="./papKamMak.css"> -->
     <link rel="stylesheet" href="./stilPapKamMak.css">
     <script src="jquery-3.6.3.min.js"></script>
-    <script src="./papirKamenMakaze.js"></script>
+    <script src="./index.js"></script>
     <title>Papir Kamen Makaze</title>
 </head>
 
@@ -15,71 +15,15 @@
 
 
     <div class="tabla">
-        <div>
-            <h2>Papir, cigla ili makaze</h2>
-            <p>
-                Pobedik je, ko prvi sakupi 10 poena.
-            </p>
+    <h3>Dobrodošli u staru poznatu igru, papir cigla makaze. <br> 
+        Samo ovoga puta se igra protiv mašine. <br>
+         Ima dve varijante pa birajte, srečno!
+    </h3>
+       <div class="start">
+        <input type="button" value="Šake" onclick="paperRock();" id="papir"/>
+        <input type="button" value="Stvari" onclick= "paperBrick();" id="papir"/>
 
-
-
-        </div>
-      
-        <div id="brojevi">
-            <div id="rezMi">0</div>
-            <div id="rezIsto">0</div>
-            <div id="rezOn">0</div>
-        </div>
-
-
-
-
-
-       
-        <div id="prviRed">
-            <div id="slika1">
-                👨🏻‍💼
-            </div >
-            <div id="razmak">vs</div>
-            <div id="slika2">
-                📱
-            </div>
-        </div>
-     <div id="prviRed">
-         <div class="naziv">ČOVEK</div>
-
-         <div class="naziv">MAŠINA</div>
-     </div>
-           
-       
-
-       
-            <div id="rezultat" >Borba može da počne</div>
-      <div id="dugmad">
-           <div ><input type="button" id="papir" value="PAPIR 🤚" onclick="dajPapir()"> </div>
-     
-       
-    
-
-            <div ><input type="button" id="kamen" value="CIGLA 🤜" onclick="dajKamen()"> </div>
-     
-       
-            <div>
-                <input type="button" id="makaze" value="MAKAZE ✌" onclick="dajMakaze()">
-            </div>
-      </div>
-      
-         
-
-       
-<div>
-     <div id="wraper">
-                <input type="button" id="nova" value="Nova igra" onclick="novaIgra()">
-            </div>
-</div>
-       
-           
-       
+       </div>
 
 
     </div>

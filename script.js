@@ -103,20 +103,20 @@ $(document).ready(function () {
         console.log("racunar izabrao 2", racunar);
 
 
-        if (racunar < 0.34) {
+        if (racunar < 0.3333) {
             slikaKomp.attr("src", slike[0]);
             brKomp = 1;
 
             $("#masina");
             console.log("prvi po redu")
-        } else if (racunar <= 0.67) {
+        } else if (racunar <= 0.6669) {
             slikaKomp.attr("src", slike[1]);
             brKomp = 2;
 
             $("#masina");
 
             console.log("drugi po redu")
-        } else if (racunar > 0.68) {
+        } else if (racunar > 0.6670) {
             slikaKomp.attr("src", slike[2]);
             brKomp = 3;
 
@@ -180,20 +180,20 @@ $(document).ready(function () {
         var racunar = Math.random();
         console.log("racunar izabrao 3", racunar);
 
-        if (racunar < 0.34) {
+        if (racunar < 0.3333) {
             slikaKomp.attr("src", slike[0]);
             brKomp = 1;
 
             $("#masina");
             console.log("prvi po redu")
-        } else if (racunar <= 0.67) {
+        } else if (racunar <= 0.6669) {
             slikaKomp.attr("src", slike[1]);
             brKomp = 2;
 
             $("#masina");
 
             console.log("drugi po redu")
-        } else if (racunar > 0.68) {
+        } else if (racunar > 0.6670) {
             slikaKomp.attr("src", slike[2]);
             brKomp = 3;
 

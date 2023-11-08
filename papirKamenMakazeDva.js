@@ -12,21 +12,21 @@ console.log(mi);
 
 
 function dajPapir() {
-    var igrac = "🤚";
+    var igrac = "📃";
     var brCovek = 2
     document.getElementById("slika1").innerHTML = (igrac);
 
     var racunar = Math.random();
     if (racunar <= 0.3333) {
-        var racun = "🤛";
+        var racun = "🧱";
         brKomp = 1
 
     } else if (racunar <= 0.6669) {
 
-        var racun = "✋";
+        var racun = "📃";
         brKomp = 2
     } else if (racunar >= 0.6670) {
-        var racun = "✌";
+        var racun = "✂";
         brKomp = 3
     };
 
@@ -82,24 +82,25 @@ function dajPapir() {
     };
 };
 function dajKamen() {
-    var igrac = "🤜";
+    var igrac = "🧱";
     var brCovek = 1
 
     document.getElementById("slika1").innerHTML = (igrac);
 
     var racunar = Math.random();
     if (racunar <= 0.3333) {
-        var racun = "🤛";
+        var racun = "🧱";
         brKomp = 1
 
     } else if (racunar <= 0.6669) {
 
-        var racun = "✋";
+        var racun = "📃";
         brKomp = 2
     } else if (racunar >= 0.6670) {
-        var racun = "✌";
+        var racun = "✂";
         brKomp = 3
     };
+
 
     document.getElementById("slika2").innerHTML = (racun);
 
@@ -157,19 +158,19 @@ function dajKamen() {
 
 function dajMakaze() {
     var brCovek = 3;
-    document.getElementById("slika1").innerHTML = "✌";
+    document.getElementById("slika1").innerHTML = "✂";
 
     var racunar = Math.random();
     if (racunar <= 0.3333) {
-        var racun = "🤛";
+        var racun = "🧱";
         brKomp = 1
 
     } else if (racunar <= 0.6669) {
 
-        var racun = "✋";
+        var racun = "📃";
         brKomp = 2
     } else if (racunar >= 0.6670) {
-        var racun = "✌";
+        var racun = "✂";
         brKomp = 3
     };
 
@@ -234,10 +235,10 @@ function dajMakaze() {
 };
 
 function novaIgra() {
-    window.location.reload();
+    location.reload();
 }
-function paperBrick() {
-    window.location.href="brick.html";
-    }
+function paperRock() {
+    window.location.href = "rock.html";
+}
 
 
